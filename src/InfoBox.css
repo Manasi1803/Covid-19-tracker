@@ -1,0 +1,36 @@
+.infoBox {
+  flex: 1;
+  cursor: pointer;
+}
+
+/* Apply it to everyone except for last child */
+
+.infoBox:not(:last-child){
+  margin-right: 15px;
+}
+
+.infoBox--selected{
+  border-top: 10px solid #07a907;
+}
+
+.infoBox--red{
+  border-color: #ce1b1b;
+}
+.infoBox__cases--green{
+  color: #07a907 !important;
+}
+
+.infoBox__cases{
+  color: #ce1b1b;
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+/* !important so that it override material ui */
+.infoBox__title{
+  color: #6c757d;
+  /* font-weight: bold; */
+  font-weight: 800 !important;
+  font-size: 1.3rem !important;
+  margin-top: 12px !important;
+}

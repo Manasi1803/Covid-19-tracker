@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #f5f6fa;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.darkMode{
+  background-color: #06042c;
+}
+
+.app__header > h1{
+  color: #a11616;
+  /* color: #fc3c3c; */
+  font-size: 2rem;
+}
+
+
+
+.app__header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app__stats {
+  display: flex;;
+  justify-content: space-between;
+
+}
+
+.app__left{
+  flex: 0.9;
+}
+
+.app__right{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+/* The MuiCardContent name can be used for providing default props or style overrides at the theme level. */
+.app__right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.app__graph{
+  flex-grow: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__graphTitle{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  /* color: black; */
+  /* font-weight: bold; */
+  /* font-weight: 750 !important;
+  font-size: 1.1rem !important; */
+}
+h3{
+  color: black;
+  /* font-weight: bold; */
+  font-weight: 750 !important;
+  font-size: 1.1rem !important;
+
+}
+
+@media (max-width: 990px) {
+  .app{
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
